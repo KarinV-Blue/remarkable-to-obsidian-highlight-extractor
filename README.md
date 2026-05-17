@@ -32,6 +32,7 @@ Open `extract_highlights.py` in any text editor and update the `OUTPUT_VAULT_FOL
     OUTPUT_VAULT_FOLDER = r"C:\Your\Obsidian\Vault\Inbox"
 ----
 **3. Configure Your Batch File**
+
 Open `run_extractor.bat` in any text editor and update the directory variable path at the top to point to where you download your reMarkable files:
 
     bat
@@ -39,6 +40,7 @@ Open `run_extractor.bat` in any text editor and update the directory variable pa
 
 ---
 **4. Run It**
+
 Double‑click `run_extractor.bat`.
 
 The script will instantly sweep your target folder, convert your highlights, display version details, and safely drop the newly formatted Markdown files directly into your Obsidian vault.
@@ -46,6 +48,7 @@ The script will instantly sweep your target folder, convert your highlights, dis
 ---
 
 **How It Works Under the Hood**
+
 Because text strings inside reMarkable v6 files are embedded sequentially in a binary data container alongside coordinate brush strokes and formatting blocks, standard text viewers struggle to display them cleanly.
 
 This script uses a customized regular expression to isolate standard UTF‑8 string sequences directly out of raw file data. It dynamically strips away proprietary structural tags (such as the trailing l! line endings), filters out system noise fragments or layer names, and merges line sentences into proper flows while maintaining clean spacing.
@@ -53,5 +56,6 @@ This script uses a customized regular expression to isolate standard UTF‑8 str
 ---
 
 **Contributing**
+
 Since I am a beginner, there are bound to be bugs, text formatting anomalies, or untested edge cases.
 Please feel free to open an Issue or submit a Pull Request if you'd like to help improve the parsing logic or expand support for other platforms.
