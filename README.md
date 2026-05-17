@@ -1,8 +1,8 @@
-# reMarkable Highlights to Obsidian Extractor
+# reMarkable Highlights to Obsidian Extractor (Paper Pro)
 
 A lightweight, zero‑dependency automation pipeline to instantly extract text highlights from reMarkable `.rm` and `.rmdoc` files directly into your Obsidian Inbox vault.
 
-_Note: I am a total amateur and originally built this tool to scratch my own itch and streamline my personal Second Brain workflow. I wanted a fast, lightweight solution that didn't require installing complex third‑party reMarkable libraries. I'm sharing it here in case it helps anyone else!_
+_Note: I am a total amateur and originally built this tool to extract highlights on my reMarkable Paper Pro. I wanted a fast, lightweight solution that didn't require installing complex third‑party reMarkable libraries. I'm sharing it here in case it helps anyone else!_
 
 ----------
 
